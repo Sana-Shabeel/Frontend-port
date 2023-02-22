@@ -42,19 +42,24 @@ function Work() {
         <span>Projects</span> i built from <span>scratch</span>
       </h2>
       <div className="app__work-filter">
-        {["Games", "Vanilla Js", "Full-Stack", "React JS", "All"].map(
-          (item, index) => (
-            <div
-              key={index}
-              onClick={() => handleFilter(item)}
-              className={`app__work-filter-item app__flex p-text ${
-                activeFilter === item ? "item-active" : ""
-              }`}
-            >
-              {item}
-            </div>
-          )
-        )}
+        {[
+          "Games",
+          "Typescript",
+          "Vanilla Js",
+          "Full-Stack",
+          "React JS",
+          "All",
+        ].map((item, index) => (
+          <div
+            key={index}
+            onClick={() => handleFilter(item)}
+            className={`app__work-filter-item app__flex p-text ${
+              activeFilter === item ? "item-active" : ""
+            }`}
+          >
+            {item}
+          </div>
+        ))}
       </div>
 
       <motion.div
