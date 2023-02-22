@@ -10,11 +10,6 @@ function Header() {
       <div>
         <img src={images.signature} alt="signature logo" />
         <h1>WEB DEVELOPER</h1>
-        <div className="by">
-          <p>BY ANAS BARRE</p>
-        </div>
-      </div>
-      <div className="absolute__social">
         <SocialMedia />
       </div>
     </div>
