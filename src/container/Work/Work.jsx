@@ -39,7 +39,7 @@ function Work() {
   return (
     <>
       <h2 className="head-text">
-        <span>Projects</span> i built from  <span>scratch</span>
+        <span>Projects</span> i built from <span>scratch</span>
       </h2>
       <div className="app__work-filter">
         {["Games", "Vanilla Js", "Full-Stack", "React JS", "All"].map(
@@ -100,9 +100,11 @@ function Work() {
 
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>
-                {work.description}
-              </p>
+              <div className="tags" style={{ marginTop: 10 }}>
+                {work.tags.map((t) => (
+                  <p className="tag p-text">{t}</p>
+                ))}
+              </div>
 
               <div className="app__work-tag app__flex">
                 <p className="p-text">{work.tags[0]}</p>
