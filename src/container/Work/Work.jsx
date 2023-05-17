@@ -45,7 +45,7 @@ function Work() {
         {[
           "Games",
           "Typescript",
-          "Vanilla Js",
+          "Next JS",
           "Full-Stack",
           "React JS",
           "All",
